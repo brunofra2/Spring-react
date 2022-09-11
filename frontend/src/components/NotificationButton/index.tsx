@@ -1,4 +1,5 @@
 import axios from "axios"
+import { toast } from "react-toastify"
 import notificacao from "../../assets/img/notification-icon.svg"
 import { BASE_URL } from "../../utils/request"
 import "./style.css"
@@ -9,7 +10,7 @@ type Props ={
 function handleclick(id : number){
     axios(`${BASE_URL}/sales/${id}/notification`)
     .then(Response => {
-    console.log(Response.data)
+    toast.info(Response.data)
     })
 }
 
