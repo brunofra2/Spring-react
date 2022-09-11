@@ -8,6 +8,7 @@ class SpringReactApplicationTests {
 
 	@Test
 	void contextLoads() {
+	 System.out.println("teste")
 	}
 
 }
